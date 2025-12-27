@@ -5,18 +5,18 @@ class SummationEven
     {
     	Scanner scan = new Scanner(System.in);
     	System.out.print("Enter Number: ");
-        int num = scan.nextInt(); // input number dila
-        int sum = 0; // sum startimg madhe 0 aste nehemi when it     comes for adding wale question 
+        int num = scan.nextInt(); // 1234 123 12 1
+        int sum = 0; // 6
         
         //loop start kela 
         while (num != 0){ 
             
-            int digit = num % 10;  // input madhla last digit find hote 
-            if (digit % 2 ==0) // digits even ahe ka nhi check hote 
+            int digit = num % 10;  //  4 3 2 1
+            if (digit % 2 ==0) // 4(true),3(false),2(true),1(false)
             {
-                sum =sum + digit; // sum variable madhe digit j ki even ahet ty sum karun store hotat
+                sum =sum + digit; // 0+4=4, 4+2=6
             }
-            num = num /10; // remove the last digit 
+            num = num /10; //  123 12 1
             
         }
         {
